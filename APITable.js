@@ -20,16 +20,15 @@ window.onload = function () {
     let div4 = document.getElementsByClassName("peer-banner-wrapper");
     let banner2 = div4[0].children;
     for (let j = 0; j < tab2.length; j++) {
-        tab2[j].index = j;
         tab2[j].onmouseover = function () {
-            for (let j = 0; j < tab2.length; j++) {
-                tab2[j].className = "peer-tab";
+            for (let k = 0; k < tab2.length; k++) {
+                tab2[k].className = "peer-tab";
             }
             this.className = "peer-tab-active";
-            for (let j = 0; j < banner2.length; j++) {
-                banner2[j].className = "peer-banner-container";
+            for (let u = 0; u < banner2.length; u++) {
+                banner2[u].className = "peer-banner-container";
             }
-            banner2[this.index].className = "peer-banner-container-active";
+            banner2[j].className = "peer-banner-container-active";
         }
     }
 }
