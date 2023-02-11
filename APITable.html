@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>width1650px</title>
     <link rel="stylesheet" href="./APITable.css">
+    <script src="./APITable.js"></script>
 </head>
 
 <body>
@@ -539,53 +540,6 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        window.onload = function () {
-            let div1 = document.getElementsByClassName("use-tab-container");
-            let tab1 = div1[0].getElementsByTagName("div");
-            let div2 = document.getElementsByClassName("use-banner-wrapper");
-            let banner1 = div2[0].getElementsByTagName("div");
-            console.log(tab1);
-            console.log(banner1);
-            for (let i = 0; i < tab1.length; i++) {
-                tab1[i].index = i;
-                tab1[i].onmouseover = function () {
-                    for (let i = 0; i < tab1.length; i++) {
-                        tab1[i].className = "use-tab";
-                    }
-                    this.className = "use-tab-active";
-                    for (let i = 0; i < banner1.length; i++) {
-                        banner1[i].className = "use-banner-container";
-                    }
-                    banner1[this.index].className = "use-banner-container-active";
-                }
-            }
-        }
-
-        let func = function () {
-            let div3 = document.getElementsByClassName("peer-tab-container");
-            let tab3 = div3[0].getElementsByTagName("div");
-            let div4 = document.getElementsByClassName("peer-banner-wrapper");
-            let banner4 = div4[0].children;
-            console.log(tab3);
-            console.log(banner4);
-            for (let j = 0; j < tab3.length; j++) {
-                tab3[j].index = j;
-                tab3[j].onmouseover = function () {
-                    for (let j = 0; j < tab3.length; j++) {
-                        tab3[j].className = "peer-tab";
-                    }
-                    this.className = "peer-tab-active";
-                    for (let j = 0; j < banner4.length; j++) {
-                        banner4[j].className = "peer-banner-container";
-                    }
-                    banner4[this.index].className = "peer-banner-container-active";
-                }
-            }
-        }
-
-        func();
-    </script>
 
 </body>
 
