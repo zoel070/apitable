@@ -344,7 +344,7 @@ body {
     line-height: 1.42857143;
 }
 
-.use-tab-active {
+.use-tab.active {
     text-align: left;
     padding: 12px 37px 12px 23px;
     margin-right: 24px;
@@ -375,7 +375,8 @@ body {
     display: none;
 }
 
-.use-banner-container-active {
+.use-banner-container.active {
+    display: block;
     background-color: #8355EC;
     box-shadow: 0px 34px 27px 0px #1F2237;
     border-radius: 30px 30px 30px 30px;
@@ -424,7 +425,7 @@ body {
     color: #8A8EA4;
 }
 
-.peer-tab-active {
+.peer-tab.active {
     display: inline-block;
     margin-right: 14px;
     line-height: 1.5;
@@ -438,7 +439,7 @@ body {
     box-shadow: 0px 8px 33px -7px #1E2137;
 }
 
-.peer-banner-container-active {
+.peer-banner-container.active {
     line-height: 1.5;
     text-align: left;
     width: 100%;
